@@ -8,6 +8,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 import HOME from './pages/home';
 import ABOUT from './pages/about';
+import ItemList from './pages/home/component/buttoncomponent';
+import Menu from './pages/home/component/buttoncomponent';
 
 
 
@@ -15,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <BrowserRouter>
-    <ABOUT/>
+    <App/>
     </BrowserRouter>
   </React.StrictMode>
 );
