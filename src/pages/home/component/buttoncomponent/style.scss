@@ -21,11 +21,23 @@
 .item-list{
     display:flex;
     flex-wrap: wrap;
+    padding: 40px 190px;
+    align-items: center;
+   
+  
 
 .item{
-    padding: 40px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 250px;
+  margin :0 30px 40px 0;
 }
-    p{
-        width: 200px;
-    }
+   
+}
+.item-details{
+  h3{
+    color:#1A6692 ;
+  }
 }

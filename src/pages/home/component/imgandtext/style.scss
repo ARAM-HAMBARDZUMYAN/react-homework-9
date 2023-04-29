@@ -1,3 +1,23 @@
 .imagebox{
-    display:flex;
+    display: flex;
+    padding: 40px 200px;
+}
+.image{
+    padding: 0 40px;
+}
+.texts{
+padding: 0 40px;
+    button{
+        float: right;
+        color: #626364;
+        background-color: white;
+        border:1px solid #626364;
+        height: 40px;
+        width: 150px;
+        font-size: 17px;
+    }
+    button:hover{
+        color: white;
+        background-color: grey;
+    }
 }

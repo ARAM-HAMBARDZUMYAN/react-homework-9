@@ -34,9 +34,9 @@ const [items] = useState({
         {items.readmore.map((item) => {
           return <div className='P-flex-box2'  >
            
-          <img  src={item.img} alt="ste pti liner icon bayc de hmi esa"/>
+          <i className={`icon icon-twitter `}></i>
      <p>{item.description}</p>
-      <button style={{backgroundColor:item.background}}>{item.buttontext}</button>
+      <button  style={{backgroundColor:item.background}}>{item.buttontext}</button>
    </div> 
          })}
    </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import FaqBox from './faq-box';
+import "./style.scss"
 const FAQsAccordion = () => {
   const [faqs, setFAQs] = useState([
     { 
@@ -28,15 +29,12 @@ const FAQsAccordion = () => {
   };
 
   return (
-    <div>
+    <div className='faqs'>
     <h1>Faqs</h1>
     <p>This section comes with Accordion tabs for different questions and answers about Simple House HTML CSS template. Thank you. #666</p>
-      {faqs.map((faq, index) => (
-        <div key={index}>
-          <div onClick={() => handleClick(index)}>{index+1} {faq.question}</div>
-          {faq.showAnswer && <div>{faq.answer}</div>}
-        </div>
-      ))}
+        {faqs.map((faq, index) => {
+        return <FaqBox item={faq} index={index} key={index}/>
+        })}
     </div>
   );
 };

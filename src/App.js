@@ -6,6 +6,8 @@ import ABOUT from "./pages/about";
 import HOME from "./pages/home";
 import CONTACT from "./pages/contact";
 import './App.css';
+import './assets/icon/style.css'
+
 import Header from "./components/header";
 
 function App() {

@@ -19,6 +19,7 @@ function ContactPage() {
           id="name"
           name="name"
           value={name}
+          placeholder='Name'
           onChange={(event) => setName(event.target.value)}
         />
     </div>
@@ -29,6 +30,7 @@ function ContactPage() {
           id="email"
           name="email"
           value={email}
+          placeholder='Email'
           onChange={(event) => setEmail(event.target.value)}
         />
         </div>
@@ -39,20 +41,29 @@ function ContactPage() {
           id="message"
           name="message"
           value={message}
+          placeholder='Message'
           onChange={(event) => setMessage(event.target.value)}
         ></textarea>
         </div>
-       <div>
-        <button onSubmit={handleSubmit}>Submit</button>
+       <div className='sendbutton'>
+        <button onSubmit={handleSubmit}>Send</button>
        </div>
         </div>
       <div className='contactpageinfo'>
-        <h4>
-        Our Address
-        </h4>
-        <p>180 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus 10550</p>
-        <p>080-090-0110</p>
-        <p>info@company.co</p>
+        <h4 style={{marginBottom:"20px"}}>Our Address</h4>
+        <p style={{marginBottom:"20px"}}>180 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus 10550</p>
+        <p style={{marginBottom:"10px"}}>080-090-0110</p>
+        <p style={{marginBottom:"40px"}}>info@company.co</p>
+        <i className={`icon icon-facebook2 `}>
+     <a href='https://www.facebook.com/'></a>
+     </i>
+     <i className={`icon icon-instagram `}>
+     <a href='https://www.facebook.com/'></a>
+     </i>
+     <i className={`icon icon-twitter `}>
+     <a href='https://www.facebook.com/'></a>
+     </i>
+    
       </div>   
     </div>
   );

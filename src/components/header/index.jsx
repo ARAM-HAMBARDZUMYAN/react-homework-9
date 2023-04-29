@@ -11,7 +11,15 @@ function Header() {
     <header className="header"
       style={{ backgroundImage: `url(${background})`, }}>
       <div className="container">
-          <img src={Logo} alt="Brand Logo" />
+      <div className="logo">
+          <img src={Logo} alt="Brand Logo" /> 
+          
+     <div className="brandname">
+                        <h1>Simple House</h1>
+                        <h6>new restaurant template</h6>
+                        </div>
+                        </div>
+                      <div className="links">
         <nav>
           <ul>
             <li>
@@ -25,6 +33,7 @@ function Header() {
             </li>
           </ul>
         </nav>
+        </div>
       </div>
       </header>
   </>

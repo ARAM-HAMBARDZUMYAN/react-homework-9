@@ -5,14 +5,14 @@ function Box(){
    
       return( <section className="imagebox">
       
-        <div>
+        <div className="image">
        <img src={avocado} alt=""/>
        </div>
-       <div>
+       <div className="texts">
        <h1>Maecenas nulla neque</h1>
-       <p>Phasellus dui velit, feugiat sed elit ut, facilisis aliquam metus. Ut id bibendum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum porttitor imperdiet. Integer facilisis.</p>
-        </div>
-        
+       <p style={{marginBottom:"100px"}}>Phasellus dui velit, feugiat sed elit ut, facilisis aliquam metus. Ut id bibendum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum porttitor imperdiet. Integer facilisis.</p>
+        <button>Read More</button>
+         </div> 
       </section>
       )
   }

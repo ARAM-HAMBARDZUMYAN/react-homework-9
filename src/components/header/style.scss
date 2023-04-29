@@ -24,8 +24,11 @@ header {
     align-items: flex-end;
     height: 100%;
     padding: 50px 50px;
+    font-size: 15px;
   }
-  
+  nav{
+    margin-bottom: 20px;
+  }
   nav ul {
     list-style: none;
     display: flex;
@@ -34,13 +37,13 @@ header {
   }
   
   nav ul li {
-    margin-right: 20px;
+    margin-right: 40px;
   }
   
   nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold;
     padding-bottom: 10px;
   }
@@ -48,4 +51,17 @@ header {
   nav ul li a:hover {
   border-bottom: 1px solid white;
   }
-  
+  .brandname{
+    display: inline-block;
+    color: white;
+    h1{
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+    h6{
+      font-size: 18px;
+    }
+  }
+  .active{
+    border-bottom: 1px solid white ;
+  }

@@ -1,0 +1,44 @@
+.P-faq-header {
+  padding : 3px;
+  border  : 1px solid #626364;
+ &.active{
+    color:#09C ;
+
+  }
+}
+.P-faq-header:hover{
+  color: #09C;
+}
+.P-faq-body {
+  max-height : 0;
+  overflow   : hidden;
+  transition : ease-out 0.6s;
+
+  &.P-open-faq {
+    max-height : 100px;
+    transition : ease-in 0.3s;
+    overflow   : hidden;
+    overflow-y : auto;
+    color:#626364;
+   
+  }
+}
+
+.P-faq-box {
+  & + .P-faq-box {
+    margin-top : 15px;
+  }
+}
+.faqs{
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto; 
+  h1{
+    text-align: center;
+
+  }
+  p{
+    text-align: center;
+    color:#626364;
+  }
+}

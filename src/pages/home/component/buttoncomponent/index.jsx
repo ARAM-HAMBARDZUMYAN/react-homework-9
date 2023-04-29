@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./style.scss"
 import photo1 from '../../../../assets/images/01.jpg';
 import photo2 from '../../../../assets/images/02.jpg';
@@ -16,6 +16,7 @@ const ITEMS = [
         price: "$45 / $55",
         description: 'Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan',
         category:"Pizza",
+    
       },
       {
           img:photo2, 
@@ -156,12 +157,17 @@ const MENU_CATEGORIES = [ 'Pizza', 'Salad', 'Noodle'];
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('Pizza');
+  const [filteredItems, setFilteredItems] = useState([])
+
 
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
   };
 
-  const filteredItems =ITEMS.filter(item => item.category === activeCategory);
+  useEffect(() => {
+    const x = ITEMS.filter(item => item.category === activeCategory)
+    setFilteredItems(x)
+  }, [activeCategory])
 
   return (
     <div className='menu-container'>
@@ -179,11 +185,11 @@ const Menu = () => {
       <div className='item-list'>
         {filteredItems.map((item, index) => (
           <div key={index} className='item'>
-            <img src={item.img} alt={item.name} />
+            <img src={item.img} alt={item.name}/>
             <div className='item-details'>
               <h3>{item.name}</h3>
               <p>{item.description}</p>
-              <p>{item.price}</p>
+              <p style={{color:"#2F956D"}}>{item.price}</p>
             </div>
           </div>
         ))}
